@@ -1,0 +1,10 @@
+/Users/netsanetgebremedhin/nextflow-dsl2/data/101010.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/111.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/222.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/333.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/444.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/555.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/666.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/777.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/888.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/999.txt

@@ -1,0 +1,1 @@
+/Users/netsanetgebremedhin/nextflow-dsl2/data/555.txt

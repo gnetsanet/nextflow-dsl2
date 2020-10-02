@@ -1,0 +1,97 @@
+Oct-02 18:59:31.132 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-test-ds2.nf
+Oct-02 18:59:31.209 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.07.1
+Oct-02 18:59:31.220 [main] INFO  nextflow.cli.CmdRun - Launching `nf-test-ds2.nf` [stupefied_caravaggio] - revision: ed68253b3b
+Oct-02 18:59:31.312 [main] DEBUG nextflow.Session - Session uuid: d8593538-05a0-45c6-b4f3-a49729c50315
+Oct-02 18:59:31.313 [main] DEBUG nextflow.Session - Run name: stupefied_caravaggio
+Oct-02 18:59:31.314 [main] DEBUG nextflow.Session - Executor pool size: 16
+Oct-02 18:59:36.347 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.07.1 build 5412
+  Created: 24-07-2020 15:18 UTC (11:18 EDT)
+  System: Mac OS X 10.15.6
+  Runtime: Groovy 2.5.11 on Java HotSpot(TM) 64-Bit Server VM 14.0.2+12-46
+  Encoding: UTF-8 (UTF-8)
+  Process: 29976@Netsanets-MacBook-Pro-2.local [192.168.4.46]
+  CPUs: 16 - Mem: 32 GB (4.2 GB) - Swap: 3 GB (1.4 GB)
+Oct-02 18:59:36.365 [main] DEBUG nextflow.Session - Work-dir: /Users/netsanetgebremedhin/nextflow-dsl2/work [Mac OS X]
+Oct-02 18:59:36.366 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/netsanetgebremedhin/nextflow-dsl2/bin
+Oct-02 18:59:36.402 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-02 18:59:36.404 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-02 18:59:36.509 [main] DEBUG nextflow.Session - Session start invoked
+Oct-02 18:59:36.801 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-02 18:59:36.820 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: categorize, handle_valid
+Oct-02 18:59:36.944 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-02 18:59:36.944 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-02 18:59:36.947 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-02 18:59:36.950 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=32 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Oct-02 18:59:37.011 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-02 18:59:37.011 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-02 18:59:37.014 [main] DEBUG nextflow.Session - Ignite dataflow network (3)
+Oct-02 18:59:37.019 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > categorize
+Oct-02 18:59:37.019 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > handle_valid
+Oct-02 18:59:37.019 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-02 18:59:37.020 [main] DEBUG nextflow.Session - Session await
+Oct-02 18:59:37.180 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.184 [Task submitter] INFO  nextflow.Session - [b1/db05c3] Submitted process > categorize (8)
+Oct-02 18:59:37.190 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.190 [Task submitter] INFO  nextflow.Session - [0f/7651f9] Submitted process > categorize (4)
+Oct-02 18:59:37.193 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.194 [Task submitter] INFO  nextflow.Session - [91/fea168] Submitted process > categorize (5)
+Oct-02 18:59:37.197 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.197 [Task submitter] INFO  nextflow.Session - [cc/d3cb69] Submitted process > categorize (9)
+Oct-02 18:59:37.201 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.201 [Task submitter] INFO  nextflow.Session - [40/bba72e] Submitted process > categorize (10)
+Oct-02 18:59:37.205 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.205 [Task submitter] INFO  nextflow.Session - [0b/6265ed] Submitted process > categorize (2)
+Oct-02 18:59:37.209 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.210 [Task submitter] INFO  nextflow.Session - [70/1bc4a8] Submitted process > categorize (6)
+Oct-02 18:59:37.215 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.215 [Task submitter] INFO  nextflow.Session - [ca/78e2f0] Submitted process > categorize (1)
+Oct-02 18:59:37.220 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.220 [Task submitter] INFO  nextflow.Session - [91/e8a5fa] Submitted process > categorize (3)
+Oct-02 18:59:37.225 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.225 [Task submitter] INFO  nextflow.Session - [9a/2f15da] Submitted process > categorize (7)
+Oct-02 18:59:37.255 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: categorize (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/b1/db05c39e3e789749113e0742261342]
+Oct-02 18:59:37.267 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: categorize (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/0f/7651f982af5efdbc6ffe4670e222f1]
+Oct-02 18:59:37.270 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: categorize (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/91/fea168ff02e4d333e75a3459fe69b5]
+Oct-02 18:59:37.272 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.273 [Task submitter] INFO  nextflow.Session - [e6/1c88e5] Submitted process > handle_valid (1)
+Oct-02 18:59:37.274 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: categorize (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/cc/d3cb69ff674ec06ac8ddba2f3b7bce]
+Oct-02 18:59:37.277 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.277 [Task submitter] INFO  nextflow.Session - [5f/4e56d6] Submitted process > handle_valid (2)
+Oct-02 18:59:37.278 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: categorize (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/40/bba72e52a5e682c5060ea942f2d8ae]
+Oct-02 18:59:37.281 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: categorize (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/70/1bc4a818b68c1536a7988afe76c7ec]
+Oct-02 18:59:37.283 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.283 [Task submitter] INFO  nextflow.Session - [c2/39dc33] Submitted process > handle_valid (3)
+Oct-02 18:59:37.285 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: categorize (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/ca/78e2f0fa9a796606d81ab5640218f2]
+Oct-02 18:59:37.287 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: categorize (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/91/e8a5fab7364bffb69ab80cfc77cd56]
+Oct-02 18:59:37.287 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.288 [Task submitter] INFO  nextflow.Session - [88/c86b82] Submitted process > handle_valid (4)
+Oct-02 18:59:37.290 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: categorize (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/9a/2f15da2f33a3808a4272f8536092bc]
+Oct-02 18:59:37.292 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.292 [Task submitter] INFO  nextflow.Session - [cc/b2eef0] Submitted process > handle_valid (5)
+Oct-02 18:59:37.302 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.302 [Task submitter] INFO  nextflow.Session - [7a/735b32] Submitted process > handle_valid (7)
+Oct-02 18:59:37.306 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.307 [Task submitter] INFO  nextflow.Session - [c5/4b883c] Submitted process > handle_valid (8)
+Oct-02 18:59:37.311 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.311 [Task submitter] INFO  nextflow.Session - [8a/8abd81] Submitted process > handle_valid (9)
+Oct-02 18:59:37.315 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:37.315 [Task submitter] INFO  nextflow.Session - [0a/6d62a0] Submitted process > handle_valid (6)
+Oct-02 18:59:37.346 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: handle_valid (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/e6/1c88e5a19f8786e516cde6e4467dd0]
+Oct-02 18:59:37.354 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: handle_valid (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/5f/4e56d65542b3c205d3ea59053cd436]
+Oct-02 18:59:37.364 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: handle_valid (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/c2/39dc332b8fff7837004aeb332c12bb]
+Oct-02 18:59:37.368 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: handle_valid (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/88/c86b8268f25119802b10f62b4836a1]
+Oct-02 18:59:37.377 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: handle_valid (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/cc/b2eef0775a2f4c5f01d03b774621b1]
+Oct-02 18:59:37.394 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: handle_valid (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/7a/735b32a5e80248dc038da8b4e68314]
+Oct-02 18:59:37.401 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: handle_valid (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/c5/4b883c7f5d73b12775f9e4bd592c2c]
+Oct-02 18:59:37.406 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: handle_valid (9); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/8a/8abd8179f3bd5bd19f18658c7d3f7a]
+Oct-02 18:59:37.408 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: handle_valid (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/0a/6d62a045e0db2225d54b60759a3da2]
+Oct-02 18:59:38.273 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: categorize (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/0b/6265ed67d74316b8e64887feb229d9]
+Oct-02 18:59:38.280 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-02 18:59:38.280 [Task submitter] INFO  nextflow.Session - [1f/07187a] Submitted process > handle_valid (10)
+Oct-02 18:59:38.339 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: handle_valid (10); status: COMPLETED; exit: 0; error: -; workDir: /Users/netsanetgebremedhin/nextflow-dsl2/work/1f/07187aa34dae20a5d77cc0f88be894]
+Oct-02 18:59:38.339 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-02 18:59:38.340 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-02 18:59:38.349 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=20; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=9; peakCpus=9; peakMemory=0; ]
+Oct-02 18:59:38.401 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-02 18:59:38.419 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
