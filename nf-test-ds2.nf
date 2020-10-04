@@ -1,13 +1,25 @@
 nextflow.enable.dsl=2
 
+process getVersionNo {
+   output:
+   	stdout  emit: version_no
+   script:
+
+   """
+   echo "v1.2.4"|tr -d '\n'
+   """
+	
+}
+
 process categorize {
     input:
 	tuple val(x) , path(hello_file)
+	val(version_no)
     output:
-	path "${hello_file}.${x}.copy.txt"
+	path "${hello_file}.${x}.${version_no}.copy.txt"
     script:
     """
-    cat  ${hello_file}>${hello_file}.${x}.copy.txt
+    cat  ${hello_file}>${hello_file}.${x}.${version_no}.copy.txt
     """
 }
 
@@ -28,8 +40,9 @@ workflow {
 	    .fromPath("./fofn.txt")
 	    .splitCsv(header: false, strip: true)
 	    .map { line ->[ line[0].tokenize("/")[-1].tokenize('.')[0],file(line[0])] }
-    
-	results = categorize(file_list)
+
+	bwa = getVersionNo()    
+	results = categorize(file_list,bwa)
 	valid_results = handle_valid(results,file_list)
 
 }
