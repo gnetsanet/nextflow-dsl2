@@ -1,5 +1,36 @@
 # nextflow-dsl2
 
+Take the following data, which is file of file names/paths:
+
+```
+/Users/netsanetgebremedhin/nextflow-dsl2/data/101010.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/111.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/222.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/333.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/444.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/555.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/666.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/777.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/888.txt
+/Users/netsanetgebremedhin/nextflow-dsl2/data/999.txt
+```
+
+And convert it to the below channel of tuples.
+
+```
+[101010, /Users/netsanetgebremedhin/nextflow-dsl2/data/101010.txt]
+[111, /Users/netsanetgebremedhin/nextflow-dsl2/data/111.txt]
+[222, /Users/netsanetgebremedhin/nextflow-dsl2/data/222.txt]
+[333, /Users/netsanetgebremedhin/nextflow-dsl2/data/333.txt]
+[444, /Users/netsanetgebremedhin/nextflow-dsl2/data/444.txt]
+[555, /Users/netsanetgebremedhin/nextflow-dsl2/data/555.txt]
+[666, /Users/netsanetgebremedhin/nextflow-dsl2/data/666.txt]
+[777, /Users/netsanetgebremedhin/nextflow-dsl2/data/777.txt]
+[888, /Users/netsanetgebremedhin/nextflow-dsl2/data/888.txt]
+[999, /Users/netsanetgebremedhin/nextflow-dsl2/data/999.txt]
+```
+
+
 ```
 NOTE: Nextflow is not tested with Java 14.0.2 -- It's recommended the use of version 8 up to 12
 
