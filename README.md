@@ -32,14 +32,15 @@ And convert it to the below channel of tuples.
 
 
 ```
-NOTE: Nextflow is not tested with Java 14.0.2 -- It's recommended the use of version 8 up to 12
-
-N E X T F L O W  ~  version 20.07.1
-Launching `nf-test-ds2.nf` [voluminous_engelbart] - revision: 2128069b96
-executor >  local (21)
-[9b/52787b] process > getVersionNo      [100%] 1 of 1 ✔
-[bf/92f5a0] process > categorize (8)    [100%] 10 of 10 ✔
-[f5/71758f] process > handle_valid (10) [100%] 10 of 10 ✔
+Monitor the execution with Nextflow Tower using this url https://tower.nf/watch/DzFMkP0QbPlbL
+executor >  awsbatch (21)
+[05/49cad4] process > getVersionNo      [100%] 1 of 1 ✔
+[34/c041e2] process > categorize (10)   [100%] 10 of 10 ✔
+[b1/3ce25e] process > handle_valid (10) [100%] 10 of 10 ✔
+Completed at: 05-Oct-2020 13:55:11
+Duration    : 3m 42s
+CPU hours   : (a few seconds)
+Succeeded   : 21
 ```
 
 
